@@ -1,15 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML traning</title>
+  <!--Тег для подключения css-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Hello World
-    <!--<p>-параграф, <b>-bold-жирный, <i>-italic-курсив, <strike>-зачеркнутый, <br>-Перенос на новую строку, <hr>-линия на всю строку -->
+  <a name="upPage"></a>
+<!--Заголовки 6 видов, от большего к меньшему, <big>-текст чуть больше, <small>-текст чуть меньше-->
+  <h1>Заголовок <small>1</small></h1>
+  <h2>Заголовок <big>2</big></h2>
+  <h3>Заголовок 3</h3>
+  <h4>Заголовок 4</h4>
+  <h5>Заголовок 5</h5>
+  <h6>Заголовок 6</h6>
+
+<!--<p>-параграф, <b>-bold-жирный, <i>-italic-курсив, <strike>-зачеркнутый, <br>-Перенос на новую строку, <hr>-линия на всю строку -->
   <p>Lorem <b>ipsum dolor sit amet</b> consectetur, <b>adipisicing elit</b>. <strike>Aliquid eaque aliquam sint hic consectetur harum omnis alias cum ipsam autem.</strike> Dignissimos maiores eaque enim accusamus distinctio reiciendis rerum quae cum!</p>
   <p>Lorem <i>ipsum dolor sit amet</i> consectetur <i>adipisicing elit</i>. Beatae nulla iste illum quasi eius! <strike>Inventore doloremque necessitatibus dolores veniam,</strike> quisquam magni veritatis incidunt ut nemo facere est magnam libero voluptatibus?</p> <hr><br>
+<!--<sub>-подстрочный элемент, <sup>-надстрочный элемент, <abbr>-аббревиатура, <address>-адрес-->
+  H<sub>2</sub>O <br>
+  a<sup>2</sup> <br>
+  <abbr title="HyperText Markup Language — «язык гипертекстовой разметки»">HTML</abbr> <br>
+  <address>Russian Federation, Kemerovo</address> <br>
+
+<!--<pre>-сохраняет все пробелы и отступы в тексте-->
+    <pre>function some() {
+        retutn "some"
+      }</pre> <br>
+<!--<ol>-нумерованный список, <ul>-не нумерованный список, <start>-начало списка, <type>-формат нумерации -->
+  <ol start="3" type="I">
+    <li>Молоко</li>
+    <li>Хлеб</li>
+    <li>Крупа</li>
+    <li>Мясо</li>
+    <li>Масло</li>
+  </ol>
+  <ul type="circle">
+    <li>Молоко</li>
+    <li>Хлеб</li>
+    <li>Мясо</li>
+  </ul>
+  
+<!--Ссылки <blank>-открыть в новом окне, #upPage-якорь для перехда по страницу(вверху name="upPage"), mailto:-написать на почту-->
+  <a href="https://www.google.ru/" target="blank">Перейти в Google</a> <br>
+  <a href="index.html">Обновить страницу</a><br>
+  <a href="#upPage">Вверх</a><br>
+  <a href="mailto:example@mail.ru">Написать на почту--</a><br>  
+
+<!--Картинки-->
+  <img src="https://sun9-2.userapi.com/impf/hb_fpA790HlmBPrVbYMomuyde9BeBKxWRwQXTA/TLIna0-fzrA.jpg?size=1097x910&quality=96&sign=803475f351d8682f66d42f69d296e0f6&type=album" alt="Никакой весны" width="20%" title="Весна зашквар">
+
+  <!--Таблицы <tr>-строка, <th>-заголовок, <td>-столбец -->
+  <table border="1" width="400px">
+    <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Отчество</th>
+      </tr>
+    </thead>
+    <tbody align="center">
+      <tr>
+        <td>Иван</td>
+        <td>Иванов</td>
+        <td>Иванович</td>
+      </tr>
+      <tr>
+        <td>Петр</td>
+        <td>Петров</td>
+        <td>Петрович</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+    
+<!--<div>-универсальный блочный элемент, <span>-универсальный строчный элемент, можно выделять что-то в предложении-->
+  <div>Lorem ipsum dolor sit amet <span>adipisicing elit.</span>  Praesentium quia natus eum laborum saepe labore repellendus dolorem aliquam culpa cupiditate animi aspernatur, dolore voluptatibus asperiores similique quam, autem ratione libero.</div><br>
+  <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eum officia optio officiis reprehenderit perspiciatis fugit architecto nesciunt molestiae porro id necessitatibus obcaecati, modi voluptatibus aut pariatur beatae aperiam velit.</span><br><br>
+
+  <!-- <form>-форма reqired - обязательно для заполнения-->
+    <form action="" method="post">
+      <label for="user_name">Введит Имя</label>
+      <input type="text" placeholder="Введите что-то" value="что-то" maxlength="9" name="user_name" id="user_name"><br>
+      <input type="password"><br>
+      <input type="email"><br>
+      <input type="color"><br>
+      <input type="date"><br>
+      <input type="checkbox"><br>
+      <input type="radio" name="state">
+      <input type="radio" name="state"><br>
+      <input type="submit" value="Отправить"><br>
+      <input type="reset" value="Очистить"><br>
+
+      <textarea name="" id="" cols="30" rows="10">какой-то текст</textarea><br>
+      <button type="reset">reset</button><br><br><br>
+
+      <!-- Селекторы -->
+      <select multiple size="4">
+        <option disabled selected>------</option>
+        <option value="">Выбор 1</option>
+        <option value="">Выбор 2</option>
+        <option >Выбор 3</option>
+        <option value="">Выбор 4</option>
+        <option value="">Выбор 5</option>
+      </select>
+    </form>
+
+      <!-- Теги сайта -->
+      <header>Шапка</header>
+      <main>Основная часть сайта</main>
+      <aside>Боковая часть сайта</aside>
+      <footer>Подвал</footer>
+      <progress max="100" value="30"></progress>
+
+      <details>
+        <summary>Подробнее</summary>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corrupti quos perferendis error laborum facere minus deleniti eum praesentium pariatur tempore non, repellendus, incidunt rerum maxime consectetur. Placeat, quaerat doloribus?
+      </details>
+
+    
+  
+<!--Подключение скрипта js-->
+<script src="/js/app.js"></script>
 </body>
-</html>
